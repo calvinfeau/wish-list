@@ -17,15 +17,15 @@
     <title>Wish List</title>
 </head>
 <body>
-        <h3>Delete Wish Item</h1>
+    <h3>Delete Wish Item</h1>
 
-        <h4>Are you sure you want to delete {{ object.name }}?</h4>
-        <table class="pure-table pure-table-striped">
-            <form action="" method="POST">
-              {% csrf_token %}
-              <input type="submit" value="Yes - Delete!" class="pure-button">
-              <a class="pure-button" href="{% url 'home'%}">Cancel</a>
-            </form>
-        </table>
+    <h4>Are you sure you want to delete {{ object.name }}?</h4>
+    <table class="pure-table pure-table-striped">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <input type="submit" value="Yes - Delete!" class="pure-button">
+            <a class="pure-button" href="{% url 'home'%}">Cancel</a>
+        </form>
+    </table>
 </body>
 </html>
